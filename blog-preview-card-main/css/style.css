@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --my-yellow: hsl(47, 88%, 63%);
+}
+
+body {
+  font-family: "Figtree", serif;
+  font-weight: 500;
+}
+
+article {
+  box-shadow: black 8px 8px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

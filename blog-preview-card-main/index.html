@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style></style>
+  </head>
+  <body class="bg-[--my-yellow]">
+    <div
+      class="h-screen flex flex-col justify-center items-center text-gray-950"
+    >
+      <article
+        class="w-[327px] md:w-[384px] mx-auto p-6 bg-white rounded-2xl border-[1px] border-black"
+      >
+        <figure>
+          <img
+            src="./assets/images/illustration-article.svg"
+            alt="card image"
+            class="mb-3 rounded-[10px]"
+          />
+        </figure>
+        <span
+          class="my-3 text-[12px] md:text-[14px] font-bold py-1 px-3 bg-yellow-300 rounded-[4px]"
+        >
+          Learning
+        </span>
+        <div class="my-3 text-[12px] md:text-[14px]">Published 21 Dec 2023</div>
+        <header
+          class="my-3 text-[20px] md:text-2xl font-extrabold hover:text-[--my-yellow]"
+        >
+          HTML & CSS foundations
+        </header>
+        <p class="text-gray-500 text-[14px] md:text-base">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+        <footer class="pt-6 pb-2">
+          <img
+            src="./assets/images/image-avatar.webp"
+            alt="Greg Hooper Photo"
+            class="w-8 h-8 inline"
+          />
+          <span class="p-3 align-middle font-bold text-[14px]"
+            >Greg Hooper</span
+          >
+        </footer>
+      </article>
+
+      <div class="attribution mt-3">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">zkmsz</a>.
+      </div>
+    </div>
+  </body>
+</html>
