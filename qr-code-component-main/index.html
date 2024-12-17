@@ -3,42 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
     <title>Frontend Mentor | QR code component</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="h-screen flex flex-col justify-center items-center">
-      <article class="w-80 mx-auto p-4 pb-6 bg-white rounded-2xl">
+    <main class="h-screen flex flex-col justify-center items-center" role="main">
+      <article class="w-80 mx-auto p-4 pb-6 bg-white rounded-2xl" aria-labelledby="qr-code-title">
         <figure>
           <img
             src="./images/image-qr-code.png"
-            alt="qr code"
+            alt="QR code linking to Frontend Mentor website"
+            aria-label="QR code to Frontend Mentor website"
             class="rounded-[10px]"
           />
         </figure>
 
-        <header class="text-[22px] text-center font-bold pt-6 text-slate-900">
-          <h2>Improve your front-end skills by building projects</h2>
+        <header>
+          <h2 id="qr-code-title" class="text-[22px] text-center font-bold pt-6 text-slate-900">
+            Improve your front-end skills by building projects
+          </h2>
         </header>
         <footer class="text-[15px] p-4 text-center text-slate-500">
-          Scan the QR code to visit Frontend Mentor and take your coding skills
-          to the next level
+          Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
         </footer>
       </article>
-      <div class="attribution">
+      <div class="attribution" role="contentinfo">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">zkmsz</a>.
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Frontend Mentor
+        </a>
+        . Coded by <a href="#">zkmsz</a>.
       </div>
-    </div>
+    </main>
   </body>
 </html>
