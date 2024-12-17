@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+body {
+  font-family: "Outfit", sans-serif;
+
+  background: linear-gradient(135deg, #0000 20.5%, #cbd5e1 0 29.5%, #0000 0) 0
+      18px,
+    linear-gradient(45deg, #0000 8%, #cbd5e1 0 17%, #0000 0 58%) 36px 0,
+    linear-gradient(
+      135deg,
+      #0000 8%,
+      #cbd5e1 0 17%,
+      #0000 0 58%,
+      #cbd5e1 0 67%,
+      #0000 0
+    ),
+    linear-gradient(
+      45deg,
+      #0000 8%,
+      #cbd5e1 0 17%,
+      #0000 0 58%,
+      #cbd5e1 0 67%,
+      #0000 0 83%,
+      #cbd5e1 0 92%,
+      #0000 0
+    ),
+    #c8c8c8;
+  background-size: 72px 72px;
+}
+
+.attribution {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
