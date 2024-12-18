@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <title>Frontend Mentor | Social links profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @layer components {
+        :root {
+          --my-green: #c4f82a;
+          --my-gray-900: #141414;
+          --my-gray-800: #1f1f1f;
+          --my-gray-700: #333;
+        }
+        .text {
+          line-height: 150%;
+          letter-spacing: 0px;
+        }
+
+        .text--bold {
+          font-weight: 700;
+        }
+
+        .text--heading {
+          font-weight: 600;
+          font-size: 1.5rem;
+        }
+        .text--primary {
+          font-size: 0.875rem;
+        }
+
+        li {
+          @apply block text-center py-3 rounded-lg bg-[--my-gray-700] text text--bold text--primary hover:bg-[--my-green] hover:text-[--my-gray-700] duration-[600ms];
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[--my-gray-900] text-white font-[Inter]">
+    <main class="h-screen flex flex-col justify-center items-center">
+      <article
+        class="mx-auto w-[20.5rem] h-[36.25rem] md:w-[26.5rem] md:h-[38.25rem] lg:w-[24rem] p-6 md:p-10 bg-[--my-gray-800] rounded-xl"
+        aria-labelledby="profile-name"
+      >
+        <header>
+          <figure>
+            <img
+              src="./assets/images/avatar-jessica.jpeg"
+              alt="Jessica Randall, Front-end developer and avid reader"
+              class="rounded-full mx-auto w-[88px] h-[88px]"
+              aria-describedby="profile-description"
+            />
+          </figure>
+          <figcaption class="my-6 text-center">
+            <span id="profile-name" class="block text text--heading mb-1">Jessica Randall</span>
+            <span class="block text text--primary text--bold text-[--my-green]"
+              >London, United Kingdom</span
+            >
+          </figcaption>
+          <p id="profile-description" class="my-6 text-center text text--primary">
+            "Front-end developer and avid reader."
+          </p>
+        </header>
+        <nav aria-label="Social and professional links">
+          <ul class="space-y-4">
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Github</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Frontend Mentor</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </nav>
+      </article>
+    </main>
+  </body>
+</html>
