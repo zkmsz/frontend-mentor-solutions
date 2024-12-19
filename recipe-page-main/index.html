@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <title>Frontend Mentor | Recipe page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer components {
+        :root {
+          --stone-100: hsl(30, 54%, 90%);
+          --stone-150: hsl(30, 18%, 87%);
+          --stone-600: hsl(30, 10%, 34%);
+          --stone-900: hsl(24, 5%, 18%);
+          --brown-800: hsl(14, 45%, 36%);
+          --rose-50: hsl(330, 100%, 98%);
+          --rose-800: hsl(332, 51%, 32%);
+        }
+
+        h1,
+        h2 {
+          font-family: "Young Serif";
+        }
+
+        h2 {
+          @apply text-[--brown-800] text-[1.75rem] mt-8 mb-6;
+        }
+
+        hr {
+          @apply my-8 border-[--stone-150];
+        }
+
+        li {
+          @apply ml-4 pl-4 mb-2;
+        }
+
+        li::marker {
+          @apply text-[--rose-800] font-bold;
+        }
+
+        tr {
+          @apply h-12 border-b-[1px] border-b-[--stone-150];
+        }
+
+        td {
+          @apply w-[50%] pl-8;
+        }
+
+        .prefix,
+        .value {
+          @apply font-bold;
+        }
+
+        .value {
+          @apply text-[--rose-800];
+        }
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-[Outfit] text-[--stone-600] leading-[150%] bg-[--stone-100]">
+    <main>
+      <article class="mb-10 px-8 w-[375px] md:rounded-3xl bg-white">
+        <figure class="w-auto mx-[-2.5rem]">
+          <img
+            src="./assets/images/image-omelette.jpeg"
+            alt="Simple Omelette"
+            class="object-contain px-2"
+          />
+        </figure>
+        <header>
+          <h1 id="recipeTitle" class="mt-10 mb-6 leading-[100%] text-[2.25rem] text-[--stone-900]">
+            Simple Omelette Recipe
+          </h1>
+          <p id="description">
+            An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs
+            cooked to perfection, optionally filled with your choice of cheese, vegetables, or
+            meats.
+          </p>
+        </header>
+        <section id="preparation" class="bg-[--rose-50] p-6 mt-8 rounded-3xl">
+          <header>
+            <h3 class="mb-4 text-[--rose-800] text-[1.25rem] font-semibold">Preparation time</h3>
+          </header>
+          <ul class="list-disc">
+            <li><span class="prefix">Total:</span> Approximately 10 minutes</li>
+            <li><span class="prefix">Preparation:</span> 5 minutes</li>
+            <li><span class="prefix">Cooking:</span> 5 minutes</li>
+          </ul>
+        </section>
+        <section id="ingredients">
+          <header><h2>Ingredients</h2></header>
+          <ul class="list-disc">
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+          </ul>
+        </section>
+        <hr />
+        <section id="instructions">
+          <header><h2>Instructions</h2></header>
+          <ol class="list-decimal">
+            <li>
+              <span class="prefix">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of
+              salt and pepper until they are well mixed. You can add a tablespoon of water or milk
+              for a fluffier texture.
+            </li>
+            <li>
+              <span class="prefix">Heat the pan:</span> Place a non-stick frying pan over medium
+              heat and add butter or oil.
+            </li>
+            <li>
+              <span class="prefix">Cook the omelette:</span> Once the butter is melted and bubbling,
+              pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            </li>
+            <li>
+              <span class="prefix">Add fillings (optional):</span> When the eggs begin to set at the
+              edges but are still slightly runny in the middle, sprinkle your chosen fillings over
+              one half of the omelette.
+            </li>
+            <li>
+              <span class="prefix">Fold and serve:</span> As the omelette continues to cook,
+              carefully lift one edge and fold it over the fillings. Let it cook for another minute,
+              then slide it onto a plate.
+            </li>
+            <li>
+              <span class="prefix">Enjoy:</span> Serve hot, with additional salt and pepper if
+              needed.
+            </li>
+          </ol>
+        </section>
+        <hr />
+        <section id="nutrition" class="pb-10">
+          <header><h2>Nutrition</h2></header>
+          <p>
+            The table below shows nutritional values per serving without the additional fillings.
+          </p>
+          <table class="mx-auto mt-6 min-w-[311px]">
+            <tr>
+              <td>Calories</td>
+              <td class="value">277kcal</td>
+            </tr>
+            <tr>
+              <td>Carbs</td>
+              <td class="value">0g</td>
+            </tr>
+            <tr>
+              <td>Protein</td>
+              <td class="value">20g</td>
+            </tr>
+            <tr>
+              <td>Fat</td>
+              <td class="value">22g</td>
+            </tr>
+          </table>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

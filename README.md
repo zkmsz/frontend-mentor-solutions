@@ -5,3 +5,4 @@
 - [QR Code Component](./qr-code-component-main/)
 - [Blog Preview Card](./blog-preview-card-main/)
 - [Social Links Profile](./social-links-profile-main/)
+- [Recipe Page](./recipe-page-main/)
