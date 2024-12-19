@@ -44,7 +44,7 @@
         }
 
         td {
-          @apply w-[50%] pl-8;
+          @apply w-[50%] indent-8;
         }
 
         .prefix,
@@ -66,12 +66,16 @@
   </head>
   <body class="font-[Outfit] text-[--stone-600] leading-[150%] bg-[--stone-100]">
     <main>
-      <article class="mb-10 px-8 w-[375px] md:rounded-3xl bg-white">
-        <figure class="w-auto mx-[-2.5rem]">
+      <article
+        class="px-8 w-[375px] bg-white md:my-32 md:mx-auto md:w-[616px] md:rounded-3xl md:p-10 lg:w-[736px]"
+        role="article"
+        aria-labelledby="recipeTitle"
+      >
+        <figure class="w-auto mx-[-2.5rem] md:mx-0">
           <img
             src="./assets/images/image-omelette.jpeg"
-            alt="Simple Omelette"
-            class="object-contain px-2"
+            alt="A plate with a simple Omelette"
+            class="object-contain px-2 md:rounded-xl"
           />
         </figure>
         <header>
@@ -84,9 +88,15 @@
             meats.
           </p>
         </header>
-        <section id="preparation" class="bg-[--rose-50] p-6 mt-8 rounded-3xl">
+        <section
+          id="preparation"
+          class="bg-[--rose-50] p-6 mt-8 rounded-xl"
+          aria-labelledby="preparationTitle"
+        >
           <header>
-            <h3 class="mb-4 text-[--rose-800] text-[1.25rem] font-semibold">Preparation time</h3>
+            <h3 id="preparationTitle" class="mb-4 text-[--rose-800] text-[1.25rem] font-semibold">
+              Preparation time
+            </h3>
           </header>
           <ul class="list-disc">
             <li><span class="prefix">Total:</span> Approximately 10 minutes</li>
@@ -94,8 +104,8 @@
             <li><span class="prefix">Cooking:</span> 5 minutes</li>
           </ul>
         </section>
-        <section id="ingredients">
-          <header><h2>Ingredients</h2></header>
+        <section id="ingredients" aria-labelledby="ingredientsTitle">
+          <header><h2 id="ingredientsTitle">Ingredients</h2></header>
           <ul class="list-disc">
             <li>2-3 large eggs</li>
             <li>Salt, to taste</li>
@@ -105,8 +115,8 @@
           </ul>
         </section>
         <hr />
-        <section id="instructions">
-          <header><h2>Instructions</h2></header>
+        <section id="instructions" aria-labelledby="instructionsTitle">
+          <header><h2 id="instructionsTitle">Instructions</h2></header>
           <ol class="list-decimal">
             <li>
               <span class="prefix">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of
@@ -138,27 +148,31 @@
           </ol>
         </section>
         <hr />
-        <section id="nutrition" class="pb-10">
-          <header><h2>Nutrition</h2></header>
+        <section id="nutrition" class="pb-10" aria-labelledby="nutritionTitle">
+          <header><h2 id="nutritionTitle">Nutrition</h2></header>
           <p>
             The table below shows nutritional values per serving without the additional fillings.
           </p>
-          <table class="mx-auto mt-6 min-w-[311px]">
-            <tr>
-              <td>Calories</td>
-              <td class="value">277kcal</td>
+          <table
+            class="mx-auto mt-6 min-w-full"
+            role="table"
+            aria-label="Nutritional values per serving"
+          >
+            <tr role="row">
+              <td role="cell">Calories</td>
+              <td role="cell" class="value">277kcal</td>
             </tr>
-            <tr>
-              <td>Carbs</td>
-              <td class="value">0g</td>
+            <tr role="row">
+              <td role="cell">Carbs</td>
+              <td role="cell" class="value">0g</td>
             </tr>
-            <tr>
-              <td>Protein</td>
-              <td class="value">20g</td>
+            <tr role="row">
+              <td role="cell">Protein</td>
+              <td role="cell" class="value">20g</td>
             </tr>
-            <tr>
-              <td>Fat</td>
-              <td class="value">22g</td>
+            <tr role="row">
+              <td role="cell">Fat</td>
+              <td role="cell" class="value">22g</td>
             </tr>
           </table>
         </section>
