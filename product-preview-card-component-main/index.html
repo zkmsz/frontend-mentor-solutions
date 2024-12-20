@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Product preview card component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer components {
+        :root {
+          --cream: #f2eae2;
+          --aurometalSaurus: #6c7289;
+          --deepAquamarine: #3d8168;
+          --deepAquamarineHover: #1a4032;
+          --gunmetal: #1c232b;
+        }
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[--cream]">
+    <main class="h-screen flex flex-col justify-center items-center">
+      <article
+        id="card"
+        class="flex flex-col lg:flex-row w-[21.4375rem] lg:w-[37.5rem] lg:h-[28.125rem] rounded-[0.625rem] bg-white overflow-hidden"
+        role="region"
+        aria-labelledby="card-title"
+      >
+        <div id="card-image">
+          <img src="./images/image-product-mobile.jpg" alt="Perfume bottle" class="lg:hidden" />
+          <img
+            src="./images/image-product-desktop.jpg"
+            alt="Gabrielle Essence Eau De Parfum bottle"
+            class="hidden lg:block h-full object-cover max-w-[25rem]"
+          />
+        </div>
+        <div id="card-text" class="p-6 lg:p-8">
+          <header>
+            <p
+              id="card-category"
+              class="pb-3 lg:pb-3 lg:pt-0 font-[Montserrat] text-[0.75rem] tracking-[0.3125rem] uppercase text-[--aurometalSaurus]"
+              aria-label="Product category"
+            >
+              Perfume
+            </p>
+            <h2 class="font-[Fraunces] font-bold text-[2rem] leading-8" aria-label="Product title">
+              Gabrielle Essence Eau De Parfum
+            </h2>
+          </header>
+          <p
+            class="text-[0.875rem] text-[--aurometalSaurus] font-[Montserrat] leading-[1.4375rem] mt-4 mb-6 lg:mt-6"
+            aria-label="Product description"
+          >
+            A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div
+            id="card-price"
+            class="mt-6 mb-5 lg:mt-[1.8125rem] lg:mb-[1.875rem]"
+            role="group"
+            aria-label="Product pricing"
+          >
+            <p
+              class="inline font-[Fraunces] font-bold text-[2rem] leading-8 text-[--deepAquamarine]"
+            >
+              <span class="sr-only">Current price:</span>
+              $149.99
+            </p>
+            <p
+              class="font-[Montserrat] inline text-[0.8125rem] leading-[1.4375rem] text-[--aurometalSaurus] line-through pl-[1.1875rem] relative bottom-[0.375rem]"
+            >
+              <span class="sr-only">Original price:</span>
+              $169.99
+            </p>
+            <p class="sr-only">Price reduced to $149.99 from $169.99</p>
+          </div>
+
+          <button
+            class="bg-[--deepAquamarine] h-12 w-full rounded-lg text-white text-[0.875rem] hover:bg-[--deepAquamarineHover]"
+            aria-label="Add Gabrielle Essence Eau De Parfum to cart"
+          >
+            <svg
+              width="15"
+              height="16"
+              xmlns="http://www.w3.org/2000/svg"
+              class="inline"
+              aria-hidden="true"
+            >
+              <path
+                d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+                fill="#FFF"
+              />
+            </svg>
+            <span class="pl-[0.725625rem] font-[Montserrat] font-bold">Add to Cart</span>
+          </button>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
