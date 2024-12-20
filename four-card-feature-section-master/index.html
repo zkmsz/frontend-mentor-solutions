@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Four card feature section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @layer components {
+        :root {
+          --bkg-primary: #fafafa;
+          --text-primary: #4d4f62;
+          --accent-red: #ea5454;
+          --accent-cyan: #44d3d2;
+          --accent-orange: #fcae4a;
+          --accent-blue: #549ef2;
+          --very-dark-blue: hsl(234, 12%, 34%);
+          --grayish-blue: hsl(229, 6%, 66%);
+          --very-light-gray: hsl(0, 0%, 98%);
+        }
+
+        h2 {
+          @apply mt-[1.6875rem] ml-[1.75rem] text-[1.25rem] font-semibold;
+        }
+
+        h2 + p {
+          @apply mt-[0.0625rem] text-[0.8125rem] ml-[1.75rem] font-extralight leading-[1.4375rem] tracking-[0.005625rem];
+        }
+        .card-shadow {
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+        .card {
+          @apply w-[19.4375rem] h-[13.875rem] bg-white rounded-lg overflow-hidden mb-6 relative lg:mb-[1.875rem];
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[--bkg-primary] font-[Poppins] text-[--very-dark-blue]">
+    <main class="h-screen">
+      <div
+        id="wrapper"
+        class="flex flex-col justify-center items-center mt-[5.3125rem] lg:mt-[5rem]"
+      >
+        <header class="w-[19.4375rem] lg:w-[33.75rem] text-center">
+          <h1 class="font-light text-2xl lg:text-[2rem] tracking-[0.010625rem]">
+            Reliable, efficient delivery
+            <span class="block font-semibold">Powered by Technology</span>
+          </h1>
+          <p
+            class="mt-4 text-[0.9375rem] font-extralight leading-[1.5625rem] tracking-[0.00625rem]"
+          >
+            Our Artificial Intelligence powered tools use millions of project data points to ensure
+            that your project is successful
+          </p>
+        </header>
+        <section class="mt-[4.75rem] lg:mt-[4rem]">
+          <div id="cards" class="lg:flex lg:flex-row lg:items-center lg:gap-[1.875rem]">
+            <div id="card-1" class="card card-shadow">
+              <div class="h-[0.221875rem] bg-[--accent-cyan]"></div>
+              <h2>Supervisor</h2>
+              <p>Monitors activity to identify project roadblocks</p>
+              <img
+                src="./images/icon-supervisor.svg"
+                alt="Supervisor icon"
+                class="absolute bottom-7 right-7 lg:bottom-8 lg:right-8 w-[57px] h-[57px] lg:w-[64-px] lg:h-[64px]"
+                aria-hidden="true"
+              />
+            </div>
+            <div id="cards-center" class="lg:flex lg:flex-col">
+              <div id="card-2" class="card card-shadow">
+                <div class="h-[0.221875rem] bg-[--accent-red]"></div>
+                <h2>Team Builder</h2>
+                <p>Scans our talent network to create the optimal team for your project</p>
+                <img
+                  src="./images/icon-team-builder.svg"
+                  alt="Team Builder icon"
+                  class="absolute bottom-7 right-7 lg:bottom-8 lg:right-8 w-[57px] h-[57px] lg:w-[64-px] lg:h-[64px]"
+                  aria-hidden="true"
+                />
+              </div>
+              <div id="card-3" class="card card-shadow">
+                <div class="h-[0.221875rem] bg-[--accent-orange]"></div>
+                <h2>Karma</h2>
+                <p>Regularly evaluates our talent to ensure quality</p>
+                <img
+                  src="./images/icon-karma.svg"
+                  alt="Karma icon"
+                  class="absolute bottom-7 right-7 lg:bottom-8 lg:right-8 w-[57px] h-[57px] lg:w-[64-px] lg:h-[64px]"
+                  aria-hidden="true"
+                />
+              </div>
+            </div>
+            <div id="card-4" class="card card-shadow">
+              <div class="h-[0.221875rem] bg-[--accent-blue]"></div>
+              <h2>Calculator</h2>
+              <p>Uses data from past projects to provide better delivery estimates</p>
+              <img
+                src="./images/icon-calculator.svg"
+                alt="Calculator icon"
+                class="absolute bottom-7 right-7 lg:bottom-8 lg:right-8 w-[57px] h-[57px] lg:w-[64-px] lg:h-[64px]"
+                aria-hidden="true"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
