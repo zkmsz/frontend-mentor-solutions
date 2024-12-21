@@ -10,7 +10,7 @@ This means all the styles are contained in a single file:
   Outfit-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
-that aren’t available as static fonts. Not all apps support variable fonts, and
+that aren't available as static fonts. Not all apps support variable fonts, and
 in those cases you can use the static font files for Outfit:
   static/Outfit-Thin.ttf
   static/Outfit-ExtraLight.ttf
