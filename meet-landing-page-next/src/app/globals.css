@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  /* Colors */
+  --cyan-600: #4d96a9;
+  --cyan-300: #8fe3f9;
+  --purple-600: #855fb1;
+  --purple-300: #d9b8ff;
+  --slate-900: #28283d;
+  --slate-600: #87879d;
+  --slate-300: #d1d1df;
+  --white: #fafafa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.text-preset-1 {
+  @apply text-[2.5rem] font-black leading-[110%];
+}
+.text-preset-2 {
+  @apply text-[2.5rem] font-black leading-[110%];
+}
+.text-preset-3 {
+  @apply font-black uppercase tracking-[0.25rem] text-[--cyan-600];
+}
+.text-preset-4 {
+  @apply text-[1.125rem] font-medium leading-[150%];
+}
+.text-preset-5 {
+  @apply font-black leading-[150%];
+}
