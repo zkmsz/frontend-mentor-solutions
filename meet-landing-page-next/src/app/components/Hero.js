@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <div id="hero" className="flex flex-col justify-center items-center text-center lg:flex-row">
+    <div className="flex flex-col justify-center items-center text-center lg:flex-row">
       <img src="tablet/image-hero.png" alt="" className="min-w-[27.0625rem] mb-12 lg:hidden" />
       <img src="desktop/image-hero-left.png" alt="" className="hidden lg:block lg:mb-[3.5625rem]" />
 

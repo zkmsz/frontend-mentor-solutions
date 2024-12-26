@@ -9,7 +9,6 @@ export default function Home() {
     <main>
       <header
         className="flex items-center justify-center mt-12 mb-16 lg:mt-20"
-        role="banner"
         aria-label="Meet Site Header"
       >
         <Logo />

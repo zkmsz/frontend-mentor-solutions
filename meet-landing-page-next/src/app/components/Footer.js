@@ -6,7 +6,6 @@ const Footer = () => {
     <div>
       <footer
         className="relative bg-[url('/mobile/image-footer.jpg')] md:bg-[url('/tablet/image-footer.jpg')] lg:bg-[url('/desktop/image-footer.jpg')] bg-cover bg-top lg:h-[19.5rem]"
-        role="contentinfo"
         aria-label="Site Footer"
       >
         <div className="absolute inset-0 bg-[--cyan-600] opacity-90"></div>
