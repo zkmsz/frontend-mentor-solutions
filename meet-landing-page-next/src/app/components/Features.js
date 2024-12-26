@@ -30,7 +30,7 @@ const Features = () => {
       </div>
       <div
         id="features-content"
-        className="text-center my-16 md:mx-[8.25rem] lg:w-[34.625rem] lg:mx-auto"
+        className="text-center my-16 md:mx-[8.25rem] lg:w-[34rem] lg:mx-auto"
       >
         <p className="font-black text-[0.75rem] uppercase tracking-[0.25rem] text-[--cyan-600] mb-4 md:text-[0.875rem] lg:text-[1rem]">
           Built for modern use
