@@ -26,7 +26,7 @@ export default function Home() {
         </h2>
         <Features />
       </section>
-      <div className="my-16">
+      <div className="mt-16 mb-[-0.5rem] relative z-10">
         <Ornament>02</Ornament>
       </div>
       <Footer />
