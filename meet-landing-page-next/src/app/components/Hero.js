@@ -12,7 +12,10 @@ const Hero = () => {
           id="hero-content"
           className="md:mx-[10rem] lg:max-w-[28rem] lg:mx-[8rem] lg:flex lg:flex-col"
         >
-          <h1 className="text-[2.5rem] font-black leading-[110%] text-[--slate-900] md:text-[3rem]">
+          <h1
+            id="hero-title"
+            className="text-[2.5rem] font-black leading-[110%] text-[--slate-900] md:text-[3rem]"
+          >
             Group Chat for Everyone
           </h1>
           <p className="font-medium leading-[150%] text-[--slate-600] my-6 lg:my-8">
@@ -22,10 +25,10 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
-          <Button primary large>
+          <Button primary large aria-label="Download version 1.3">
             Download <span className="text-[--cyan-300]">v1.3</span>
           </Button>
-          <Button secondary small>
+          <Button secondary small aria-label="Learn more about Meet">
             What is it?
           </Button>
         </div>
