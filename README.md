@@ -8,8 +8,7 @@
 - [Recipe Page](./recipe-page-main/)
 - [Product Preview Card Component](./product-preview-card-component-main/)
 - [Four Card Feature Section](./four-card-feature-section-master/)
-- [Meet Landing Page](./meet-landing-page-next/)
--
+- [Meet Landing Page ](./meet-landing-page-next/)
 
 ### Junior
 
