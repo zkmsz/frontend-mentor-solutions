@@ -10,11 +10,11 @@ const Hero = () => {
       <div className="lg:flex lg:flex-col lg:items-center lg:justify-center">
         <div
           id="hero-content"
-          className="md:mx-[10rem] lg:max-w-[28rem] lg:mx-[8rem] lg:flex lg:flex-col"
+          className="md:mx-[10rem] lg:w-[28.25rem] lg:mx-[8rem] lg:flex lg:flex-col"
         >
           <h1
             id="hero-title"
-            className="text-[2.5rem] font-black leading-[110%] text-[--slate-900] md:text-[3rem]"
+            className="text-[2.5rem] font-black leading-[110%] text-[--slate-900] md:text-[3rem] lg:text-[4rem]"
           >
             Group Chat for Everyone
           </h1>
