@@ -16,7 +16,7 @@ export default function Home() {
       <div className="my-16">
         <Ornament>01</Ornament>
       </div>
-      <section id="features" class="mx-8 mb-16">
+      <section id="features" className="mx-8 mb-16 md:mx-[2.75rem]">
         <Features />
       </section>
       <div className="my-16">
