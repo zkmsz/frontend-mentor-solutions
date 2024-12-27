@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Article preview component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer components {
+        :root {
+          --text-primary: #48556a;
+          --text-secondary: #6e8098;
+          --background: #ecf2f8;
+        }
+      }
+      .shadow {
+        box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.5);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-[Manrope] text-[--text-primary] bg-gray-700">
+    <main class="h-screen flex flex-col justify-center items-center">
+      <article class="shadow w-[20.4375rem] bg-white rounded-[0.625rem]">
+        <figure>
+          <img src="./images/drawers.jpg" alt="Drawers" class="rounded-t-[0.625rem]" />
+        </figure>
+        <div id="article-content" class="mx-8">
+          <p class="font-bold leading-6 tracking-[0.0125rem] mt-[2.25rem] mb-[0.75rem]">
+            Shift the overall look and feel by adding these wonderful touches to furniture in your
+            home
+          </p>
+          <p class="text-[0.8125rem] leading-5 tracking-[0.007625rem] text-[--text-secondary] mb-8">
+            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare
+            and uninviting. I've got some simple tips to help you make any room feel complete.
+          </p>
+          <footer class="flex flex-row mb-[1.25rem]">
+            <div class="flex-none">
+              <img
+                src="./images/avatar-michelle.jpg"
+                alt="Thumbnail photo of Michelle Appleton"
+                class="w-[2.5rem] h-[2.5rem] rounded-full mr-4"
+              />
+            </div>
+            <div class="flex-1">
+              <p
+                class="font-bold text-[0.8125rem] leading-5 tracking-[0.007625rem] text-[--text-primary]"
+              >
+                Michelle Appleton
+              </p>
+              <p class="text-[0.8125rem] leading-5 tracking-[0.007625rem] text-[--text-secondary]">
+                28 Jun 2020
+              </p>
+            </div>
+            <div class="flex-none py-1">
+              <div
+                class="flex flex-col align-middle justify-center w-8 h-8 bg-[--background] rounded-full"
+              >
+                <img
+                  src="./images/icon-share.svg"
+                  alt="Share this article"
+                  class="mx-auto my-auto"
+                />
+              </div>
+            </div>
+          </footer>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
