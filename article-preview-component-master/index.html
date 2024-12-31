@@ -55,7 +55,7 @@
             Ever been in a room and felt like something was missing? Perhaps it felt slightly bare
             and uninviting. I've got some simple tips to help you make any room feel complete.
           </p>
-          <div id="author-footer" class="hidden lg:block relative">
+          <div id="author-footer" class="visible lg:block relative">
             <footer class="flex flex-row mb-[1.25rem] lg:mb-8">
               <div class="flex-none">
                 <img
@@ -78,7 +78,7 @@
               </div>
             </footer>
           </div>
-          <div id="share-footer" class="lg:hidden mt-[-0.25rem]">
+          <div id="share-footer" class="hidden lg:hidden mt-[-0.25rem]">
             <footer class="flex flex-row" onclick="toggleShare()">
               <div
                 class="w-[20.4375rem] min-h-[4rem] bg-[--text-primary] mx-[-2rem] rounded-b-[0.625rem] px-8"
@@ -95,13 +95,27 @@
             </footer>
           </div>
         </div>
-        <div id="share" class="flex-none py-1 absolute bottom-[0.875rem] right-8 z-50 lg:bottom-8">
+        <div
+          id="share"
+          class="flex-none py-1 absolute bottom-[0.875rem] right-8 z-50 z-50 lg:bottom-8"
+        >
           <div
             id="share-icon"
             class="flex flex-col align-middle justify-center w-8 h-8 bg-[--background] rounded-full"
             onclick="toggleShare()"
           >
             <img src="./images/icon-share.svg" alt="Share this article" class="mx-auto my-auto" />
+          </div>
+        </div>
+        <div
+          id="desktop-tooltip"
+          class="shadow hidden absolute bottom-[5rem] right-[-4rem] z-50 w-[15.5rem] h-[3.4375rem] bg-[--text-primary] rounded-[0.625rem]"
+        >
+          <div class="flex flex-row justify-evenly pt-[1.125rem] px-6">
+            <p class="text-[0.8125rem] text-[#9DAEC2] uppercase tracking-[0.3125rem] mr-1">share</p>
+            <img src="./images/icon-facebook.svg" alt="Share on facebook" class="w-5 h-5" />
+            <img src="./images/icon-pinterest.svg" alt="Share on pinterest" class="w-5 h-5" />
+            <img src="./images/icon-twitter.svg" alt="Share on twitter" class="w-5 h-5" />
           </div>
         </div>
       </article>
