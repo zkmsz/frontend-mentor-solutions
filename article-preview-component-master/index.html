@@ -28,10 +28,10 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-[Manrope] text-[--text-primary] bg-gray-700">
+  <body class="font-[Manrope] text-[--text-primary] bg-[--background]">
     <main class="h-screen flex flex-col justify-center items-center">
       <article
-        class="shadow w-[20.4375rem] bg-white rounded-[0.625rem] lg:flex lg:flex-row lg:w-[45.625rem]"
+        class="shadow w-[20.4375rem] bg-white rounded-[0.625rem] lg:flex lg:flex-row lg:w-[45.625rem] relative"
       >
         <div class="h-[12.5rem] lg:min-w-[17.8125rem] lg:min-h-[17.5rem]">
           <figure class="h-full">
@@ -55,38 +55,57 @@
             Ever been in a room and felt like something was missing? Perhaps it felt slightly bare
             and uninviting. I've got some simple tips to help you make any room feel complete.
           </p>
-          <footer class="flex flex-row mb-[1.25rem] lg:mb-8">
-            <div class="flex-none">
-              <img
-                src="./images/avatar-michelle.jpg"
-                alt="Thumbnail photo of Michelle Appleton"
-                class="w-[2.5rem] h-[2.5rem] rounded-full mr-4"
-              />
-            </div>
-            <div class="flex-1">
-              <p
-                class="font-bold text-[0.8125rem] leading-5 tracking-[0.007625rem] text-[--text-primary]"
-              >
-                Michelle Appleton
-              </p>
-              <p class="text-[0.8125rem] leading-5 tracking-[0.007625rem] text-[--text-secondary]">
-                28 Jun 2020
-              </p>
-            </div>
-            <div class="flex-none py-1">
-              <div
-                class="flex flex-col align-middle justify-center w-8 h-8 bg-[--background] rounded-full"
-              >
+          <div id="author-footer" class="hidden lg:block relative">
+            <footer class="flex flex-row mb-[1.25rem] lg:mb-8">
+              <div class="flex-none">
                 <img
-                  src="./images/icon-share.svg"
-                  alt="Share this article"
-                  class="mx-auto my-auto"
+                  src="./images/avatar-michelle.jpg"
+                  alt="Thumbnail photo of Michelle Appleton"
+                  class="w-[2.5rem] h-[2.5rem] rounded-full mr-4"
                 />
               </div>
-            </div>
-          </footer>
+              <div class="flex-1">
+                <p
+                  class="font-bold text-[0.8125rem] leading-5 tracking-[0.007625rem] text-[--text-primary]"
+                >
+                  Michelle Appleton
+                </p>
+                <p
+                  class="text-[0.8125rem] leading-5 tracking-[0.007625rem] text-[--text-secondary]"
+                >
+                  28 Jun 2020
+                </p>
+              </div>
+            </footer>
+          </div>
+          <div id="share-footer" class="lg:hidden mt-[-0.25rem]">
+            <footer class="flex flex-row" onclick="toggleShare()">
+              <div
+                class="w-[20.4375rem] min-h-[4rem] bg-[--text-primary] mx-[-2rem] rounded-b-[0.625rem] px-8"
+              >
+                <div class="flex flex-row justify-evenly max-w-[10.9375rem] gap-4 mt-[1.375rem]">
+                  <p class="text-[0.8125rem] text-[#9DAEC2] uppercase tracking-[0.3125rem] mr-1">
+                    share
+                  </p>
+                  <img src="./images/icon-facebook.svg" alt="Share on facebook" class="w-5 h-5" />
+                  <img src="./images/icon-pinterest.svg" alt="Share on pinterest" class="w-5 h-5" />
+                  <img src="./images/icon-twitter.svg" alt="Share on twitter" class="w-5 h-5" />
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+        <div id="share" class="flex-none py-1 absolute bottom-[0.875rem] right-8 z-50 lg:bottom-8">
+          <div
+            id="share-icon"
+            class="flex flex-col align-middle justify-center w-8 h-8 bg-[--background] rounded-full"
+            onclick="toggleShare()"
+          >
+            <img src="./images/icon-share.svg" alt="Share this article" class="mx-auto my-auto" />
+          </div>
         </div>
       </article>
     </main>
   </body>
+  <script src="./js/script.js"></script>
 </html>
